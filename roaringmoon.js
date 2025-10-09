@@ -1,4 +1,4 @@
-import { PixelPlace, Packets, Color, PPError, AuthFile, Font, Modes} from "pixelplacejs-new";
+import {PixelPlace, AuthFile} from "pixelplacejs-new";
 
 
 (async () => {
