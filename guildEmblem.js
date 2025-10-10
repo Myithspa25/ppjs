@@ -14,6 +14,7 @@ import {PixelPlace, AuthFile, Modes} from "pixelplacejs-new";
 
     const bot = pp.bots[0];
     console.log("Pixel Place initiated!");
+    bot.setPlacementSpeed(12)
 
     await bot.drawImage({
         x: 1113,
