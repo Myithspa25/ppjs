@@ -11,7 +11,7 @@ let chars = [' ', 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm
     const params = [
         {
             authData: AuthFile.from("9qyhm"),
-            boardID: 7,
+            boardID: 98022,
         }
     ];
 
@@ -37,12 +37,12 @@ let chars = [' ', 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm
     //});
     for (i = 0; i < str.length; i++) {
         await bot.placePixel({
-            x: x+815,
-            y: y+230,
+            x: x,
+            y: y,
             col: str[i],
         });
         x++;
-        if (x == 182) {
+        if (x == bot.canvasWidth + 1) {
             x = 0;
             y += 1;
         };
